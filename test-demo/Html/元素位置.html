@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .father {
+            position: relative;
+        }
+
+        .son {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+
+            /* position: absolute;
+            margin:auto;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0; */
+            
+            /* width: 100px;
+            height: 100px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: -50px; */
+        }
+
+        .son::after {
+            content: '';
+            display: block;
+        }
+        .bfc{
+            overflow: auto;
+            /* display: inline-block; */
+            /* display: table-cell; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="father">
+        <button bgcolor='red'>点我</button>
+        <button>点我</button>
+        <button>点我</button>
+        <div class='son' style="background: #000;color: #fff;">我在这里</div>
+        <div class='bfc'>
+            <div style='background-color: blue;margin-bottom: 10px;'>我在这里</div>
+        </div>
+        
+        <div style="background-color: brown;margin-top: 10px;">我在这里</div>
+    </div>
+
+
+
+    <script>
+        let el = document.querySelector('div');
+        el.addEventListener('click', function (e) {
+            console.log(e.target.clientHeight, e.target.clientWidth) //被点击元素宽高
+            console.log(e.clientX, e.clientY) //点击位置
+            e.target.style.backgroundColor= 'red';
+            console.log(e.target.style.backgroundColor)
+        })
+    </script>
+</body>
+
+</html>

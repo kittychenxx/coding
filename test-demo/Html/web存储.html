@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let db = window.indexedDB;
+        let sourse = db.open('sql');
+        //新的数据库创建，数据库版本号改变触发
+        sourse.onupgradeneeded = function (e) {
+            let sql=e.target.result;
+            console.log('s',db.version)
+        }
+        //打开数据库
+        sourse.onsuccess=function(){
+            //查询表是否存在
+        }
+    </script>
+
+</body>
+
+</html>
