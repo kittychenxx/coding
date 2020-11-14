@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="checkbox" id="check" tabindex="1" style="width:50px; height: 50px;" title="Check this!"
+        description="just a checkbox" checked />
+    <img id="logo" src='logo.jpg' class="aaa" />
+
+    <script>
+        // var checkbox = document.getElementById('check'); //checkbox是选择框
+        // console.log(checkbox.getAttribute('checked')); //显示空白
+        // console.log(checkbox.checked);//true
+
+        // checkbox.setAttribute('checked', 'false');
+        // console.log(checkbox.getAttribute('checked'));//false
+        // console.log(checkbox.checked);//true
+
+
+        // //checkbox的非内建属性
+        // console.log(checkbox.getAttribute('description'));//just a checkbox
+        // console.log(checkbox.description);//undefined
+
+        // checkbox.description = '123';
+        // console.log(checkbox.getAttribute('description'));//just a checkbox
+        // console.log(checkbox.description);//123
+
+        //img的src属性，返回值不一样
+        var img = document.getElementById('logo');
+        img.src = '../logo.jpg';
+        console.log(img.src);//绝对路径
+        console.log(img.getAttribute('src'));//img.src
+
+        //属性和特性的调用名不一样
+        console.log(img.class);
+        console.log(img.getAttribute('class'));
+        console.log(img.className);//class不能作为jquery的属性名，所以要用className调用
+    </script>
+</body>
+
+</html>
