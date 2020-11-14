@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .fad {
+            border: 1px black solid;
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+
+        }
+
+        .c0 {
+            flex: 0 0 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cornflowerblue;
+        }
+
+        .cc0 {
+            flex: 1 1 0%;
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+        }
+
+        .cc1 {
+            flex: 0 0 20%;
+        }
+
+        .c1 {
+            /* flex: 0 0 50px; */
+            background-color: black;
+        }
+
+        .c2 {
+            /* flex: 1 0 auto; */
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fad">
+        <div class="c0">www</div>
+        <div class="cc0">
+            <div class="c1">111</div>
+            <div class="c2">111</div>
+        </div>
+        <div class="cc1">hhh</div>
+    </div>
+</body>
+
+</html>
