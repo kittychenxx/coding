@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+<title>双向链表</title>
+<script src="Linked_list.js"></script>
+<script src="Linked_list2.js"></script>
+<script>
+    const DoubleList = new DoubleLinked_list();
+    DoubleList.append('aaa');
+    DoubleList.append('bbb');
+    DoubleList.append('ccc');
+
+    console.log(DoubleList);
+
+    // insert()
+    DoubleList.insert(3, 'abc');
+    DoubleList.insert(1, 'npc');
+
+    console.log(DoubleList);
+
+    // get()
+    console.log(DoubleList.get(4));
+
+    // indexOf()
+    console.log(DoubleList.indexOf('bbb'));
+
+    // removeAt()
+    console.log(DoubleList.removeAt(4));
+
+    // update()
+    console.log(DoubleList.update(2, 'kkk'));
+    console.log(DoubleList.update(0, 'nba'));
+    console.log(DoubleList);
+
+    // remove()
+    console.log(DoubleList.remove('kkk'));
+    console.log(DoubleList);
+
+    // isEmpty() size()
+    console.log(DoubleList.isEmpty());
+    console.log(DoubleList.size());
+</script>

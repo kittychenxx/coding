@@ -1,0 +1,23 @@
+<title>栈Stack</title>
+
+<!-- <script src='Stack.js'></script> -->
+
+<script src='../Linked_list/Linked_list.js'></script>
+<script src='Stack2.js'></script>
+<script>
+    const stack = new Stack();
+    stack.push('abc');
+    stack.push('cba');
+    stack.push('npc');
+    stack.push('mba');
+
+    console.log(stack.item);
+    console.log(stack.pop());
+    console.log(stack.item);
+    console.log(stack.peek());
+    console.log(stack.isEmpty());
+    console.log(stack.size());
+
+    // 利用栈实现10进制转2进制
+    console.log(tenToTwo(1000));
+</script>

@@ -1,0 +1,37 @@
+<title>队列Queue</title>
+
+<script src="Queue1.js"></script>
+<script src="Queue2.js"></script>
+
+<!-- <script src="../Linked_list/Linked_list.js"></script>
+<script src="Queue3.js"></script> -->
+
+<script>
+    const queue = new Queue();
+
+    queue.equeue('abc');
+    queue.equeue('cba');
+    queue.equeue('npc');
+    queue.equeue('mba');
+
+    console.log(queue.item);
+    console.log(queue.dqueue());
+    console.log(queue.item);
+    console.log(queue.front());
+    console.log(queue.isEmpty());
+    console.log(queue.size());
+
+    console.log(passGame(['abc', 'cba', 'npc', 'mba'], 2));
+
+    // 优先级队列
+    const queue2 = new PriorityQueue();
+
+    queue2.equeue('111', 100);
+    queue2.equeue('1', 1);
+    queue2.equeue('11', 10);
+    queue2.equeue('1111', 1000);
+
+    console.log(queue2.item);
+    console.log(queue2.dqueue());
+    console.log(queue2.item);
+</script>
