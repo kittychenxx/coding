@@ -1,0 +1,40 @@
+<title>链表</title>
+<script src="Linked_list.js"></script>
+<script>
+    const list = new Linked_list();
+    list.append('aaa');
+    list.append('bbb');
+    list.append('ccc');
+
+    console.log(list);
+
+    // 测试insert()
+    list.insert(2, '000');
+    list.insert(1, 'cba');
+    list.insert(5, 'nba');
+
+    console.log(list);
+
+    // 测试get()
+    console.log(list.get(1));
+    console.log(list.get(3));
+
+    // 测试indexOf()
+    console.log(list.indexOf('cba'));
+    console.log(list.indexOf('npc'));
+
+    // 测试removeAt()
+    console.log(list.removeAt(0));
+
+    // 测试update()
+    console.log(list.update(1, 'npc'));
+    console.log(list);
+
+    // 测试remove()
+    console.log(list.remove('ccc'));
+    console.log(list);
+
+    // 测试isEmpty() size()
+    console.log(list.isEmpty());
+    console.log(list.size());
+</script>

@@ -1,0 +1,73 @@
+<title>哈希表</title>
+<script src="Hash.js"></script>
+<script>
+    // console.log(hash('name', 11));
+    // console.log(hash('abc', 11));
+    // console.log(hash('nba', 11));
+    // console.log(hash('nba', 11));
+    // console.log(hash('cba', 11));
+
+    const hashTable = new HashTable();
+
+    // hashTable.put("name", "XQ");
+    // hashTable.put("age", "18");
+    // hashTable.put("height", "181");
+    // hashTable.put("address", "china");
+
+    // hashTable.put("age", "20");
+
+    // console.log(hashTable);
+
+    // console.log(hashTable.get('age'));
+
+    // console.log(hashTable.remove('age'));
+    // console.log(hashTable);
+
+    // console.log(hashTable.isEmpty());
+    // console.log(hashTable.size());
+
+    // 重要：测试hashTable的扩容
+    // hashTable.put('aaa', 111);
+    // hashTable.put('bbb', 111);
+    // hashTable.put('ccc', 111);
+    // hashTable.put('ddd', 111);
+    // hashTable.put('eee', 111);
+    // hashTable.put('fff', 111);
+
+    // console.log(hashTable);
+
+    // hashTable.put('ggg', 222);
+
+    // console.log(hashTable);
+
+    // hashTable.remove('aaa');
+    // hashTable.remove('bbb');
+    // hashTable.remove('ccc');
+    // hashTable.remove('ddd');
+
+    // console.log(hashTable);
+
+    // console.log(isPrime(10));
+    // console.log(isPrime(11));
+    // console.log(isPrime(16));
+
+    // 重要：测试扩容是否为质数
+    hashTable.put('aaa', 111);
+    hashTable.put('bbb', 111);
+    hashTable.put('ccc', 111);
+    hashTable.put('ddd', 111);
+    hashTable.put('eee', 111);
+
+    console.log(hashTable);
+
+    hashTable.put('mmm', 222);
+
+    console.log(hashTable.get('mmm'));
+
+    console.log(hashTable);
+
+    hashTable.remove('bbb');
+    hashTable.remove('ccc');
+
+    console.log(hashTable);
+</script>
